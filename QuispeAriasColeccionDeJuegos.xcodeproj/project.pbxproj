@@ -14,6 +14,7 @@
 		B84039E32C15606B00C9195F /* QuispeAriasColeccionDeJuegos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B84039E12C15606B00C9195F /* QuispeAriasColeccionDeJuegos.xcdatamodeld */; };
 		B84039E52C15607000C9195F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84039E42C15607000C9195F /* Assets.xcassets */; };
 		B84039E82C15607000C9195F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B84039E72C15607000C9195F /* Base */; };
+		B8D2203B2C165EAA002992B7 /* JuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D2203A2C165EAA002992B7 /* JuegosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B84039E42C15607000C9195F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B84039E72C15607000C9195F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B84039E92C15607000C9195F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8D2203A2C165EAA002992B7 /* JuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				B84039E62C15607000C9195F /* LaunchScreen.storyboard */,
 				B84039E92C15607000C9195F /* Info.plist */,
 				B84039E12C15606B00C9195F /* QuispeAriasColeccionDeJuegos.xcdatamodeld */,
+				B8D2203A2C165EAA002992B7 /* JuegosViewController.swift */,
 			);
 			path = QuispeAriasColeccionDeJuegos;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8D2203B2C165EAA002992B7 /* JuegosViewController.swift in Sources */,
 				B84039DD2C15606B00C9195F /* ViewController.swift in Sources */,
 				B84039E32C15606B00C9195F /* QuispeAriasColeccionDeJuegos.xcdatamodeld in Sources */,
 				B84039D92C15606B00C9195F /* AppDelegate.swift in Sources */,
