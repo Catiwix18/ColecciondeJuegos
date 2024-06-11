@@ -33,7 +33,7 @@
                     <navigationItem key="navigationItem" id="zPE-j0-Lac">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="t1j-WH-gBq">
                             <connections>
-                                <segue destination="WqU-N2-3w6" kind="show" id="ii1-aL-wRC"/>
+                                <segue destination="WqU-N2-3w6" kind="show" identifier="juegoSegue" id="ii1-aL-wRC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -73,13 +73,23 @@
                                     <action selector="agregarTapped:" destination="WqU-N2-3w6" eventType="touchUpInside" id="IgO-Vq-eAU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbN-Uf-HGA">
+                                <rect key="frame" x="154.66666666666666" y="409" width="84" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="WqU-N2-3w6" eventType="touchUpInside" id="TPd-DD-NPa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="71j-NA-SD8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="DbN-Uf-HGA" firstAttribute="centerX" secondItem="n31-G1-lTZ" secondAttribute="centerX" id="GCZ-Ld-tgT"/>
                             <constraint firstItem="IK3-KV-SJE" firstAttribute="width" secondItem="yzq-zU-lNK" secondAttribute="width" multiplier="0.346429" constant="183" id="H2I-3O-eEO"/>
                             <constraint firstItem="IK3-KV-SJE" firstAttribute="centerX" secondItem="cED-dy-fD4" secondAttribute="centerX" id="ITy-os-fVj"/>
                             <constraint firstItem="yzq-zU-lNK" firstAttribute="top" secondItem="71j-NA-SD8" secondAttribute="top" constant="32" id="JVZ-rO-07b"/>
+                            <constraint firstItem="DbN-Uf-HGA" firstAttribute="top" secondItem="n31-G1-lTZ" secondAttribute="bottom" constant="15" id="MXq-04-df3"/>
                             <constraint firstItem="IK3-KV-SJE" firstAttribute="centerX" secondItem="yzq-zU-lNK" secondAttribute="centerX" id="RSG-Kg-UjU"/>
                             <constraint firstItem="n31-G1-lTZ" firstAttribute="top" secondItem="IK3-KV-SJE" secondAttribute="bottom" constant="20" id="VgE-pt-dSJ"/>
                             <constraint firstItem="yzq-zU-lNK" firstAttribute="centerX" secondItem="cED-dy-fD4" secondAttribute="centerX" id="ZPy-Ud-DsX"/>
@@ -91,7 +101,7 @@
                         <rightBarButtonItems>
                             <barButtonItem systemItem="camera" id="gGq-SW-mM5">
                                 <connections>
-                                    <action selector="camaraTapped:" destination="WqU-N2-3w6" id="HSg-Rq-uRZ"/>
+                                    <action selector="camaraTapped:" destination="WqU-N2-3w6" id="Jz5-mE-hsk"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Fotos" id="Giu-yI-OlE">
@@ -103,6 +113,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="JuegoImageView" destination="yzq-zU-lNK" id="qj7-Q6-aZu"/>
+                        <outlet property="agregarActualizarBoton" destination="n31-G1-lTZ" id="cln-lS-hdc"/>
+                        <outlet property="eliminarBoton" destination="DbN-Uf-HGA" id="gWu-nt-Omp"/>
                         <outlet property="tituloTextField" destination="IK3-KV-SJE" id="npP-Uv-VB7"/>
                     </connections>
                 </viewController>
